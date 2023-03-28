@@ -2,15 +2,17 @@
 :sectionnums:
 :toc:
 
+== Git Aliases and configuration
 ----
 git config --global alias.l "log --pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\""
 git config --global user.email "john.mallett@gmail.com"
 git config --global user.name "John"
 git config --global init.defaultBranch master
 ----I
-i
+
 
 == Command Line Aliases 
+
 ----
 alias s='clear;echo "git status";git status '
 alias aa='git   add -A '
