@@ -47,6 +47,7 @@ branch.main.remote=origin
 branch.main.merge=refs/heads/main
 ----
 
+== view the git config file 
 ----
 [john@fedora aaa]$ nl    ~/.gitconfig
      1	[alias]
@@ -56,7 +57,12 @@ branch.main.merge=refs/heads/main
      5	name = John
      6	[init]
      7	defaultBranch = master
-#1.3 # write some aliases for git
+----
+
+
+== write some aliases for git
+
+----
 alias s='clear;echo "git status";git status '
 alias aa='git   add -A '
 alias a='git add '
