@@ -27,3 +27,143 @@ alias r='clear;echo "git reset";git reset '
 ----
 
 
+
+
+#1.2 view
+
+----
+git config –list
+alias.l=log --pretty=format:"%C(yellow)%h%Cred%d\ %Creset%s%Cblue\ [%cn]"
+user.email=john.mallett@gmail.com
+user.name=John
+init.defaultbranch=master
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=git@github.com:johnkiwi19/aaaa.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+----
+
+----
+[john@fedora aaa]$ nl    ~/.gitconfig
+     1	[alias]
+     2	l = log --pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\"
+     3	[user]
+     4	email = john.mallett@gmail.com
+     5	name = John
+     6	[init]
+     7	defaultBranch = master
+#1.3 # write some aliases for git
+alias s='clear;echo "git status";git status '
+alias aa='git   add -A '
+alias a='git add '
+alias ra="git rm --cached '*'"
+alias r="git rm --cached "
+alias l='clear ; echo "git log ";git log -1'
+alias ll='clear ; echo "git log ";git log -2'
+alias la='clear ; echo "git log All";git log'
+
+alias lk='clear;git log "--pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\""'
+alias rh='clear;echo "git reset HEAD -- ";git reset HEAD -- '
+alias r='clear;echo "git reset";git reset '
+alias r=git restore --staged  READNE.adoc
+----
+
+
+#2 start using git 
+#2.1 Clean every thing 
+clear
+rm -rf   /home/john/aaa/git/aaa/
+mkdir -p /home/john/aaa/git/aaa/
+cd       /home/john/aaa/git/aaa 
+ls -la
+
+
+#2.2 initilise git
+git init \
+&& touch .project \
+&& printf "/bin/ \nREADME.html\n" > .gitignore \
+&& printf "= Git Project\n:sectnums:\n:toc:\n " > README.adoc \
+&& clear && pwd  && ls -la
+
+&& git add -A \
+&& git commit -m 'Start Empty project '
+
+
+#3 adding to git
+#3.1 Create an empty html file
+
+echo ' '> index.html \
+&& clear \
+&& echo "   1 create empty file " \
+&& ls -la  \
+&& echo "nl index.html" && nl index.html
+
+
+git add index.html 
+git commit -m "01)    Create an empty file "
+
+
+
+
+#3.2 add html tags
+printf "<html>\n</html>" >  index.html \
+&& clear \
+&& echo '   2 add html tags' \
+&& nl index.html
+
+git stage index.html
+git commit -m  "02)    Add HTML Tags to the file "
+
+
+#3.3 add body tags
+printf "<html>\n</html>" >  index.html\
+&& sed -i '2i\\t<body>\n\t</body>' index.html \
+&& clear \
+&& echo "   3   add body tags" \
+&& nl index.html
+
+git stage index.html
+git commit -m "03)    Add the Body Tags to the file"
+
+
+#3.4 add the header tags
+printf "<html>\n\t<body>\n\\t</body>\n</html>" >  index.html \
+&&    sed -i '2i\\t<head> \n\t<\/head>' index.html \
+&& clear \
+&& echo "   4  add hearder tags" \
+&& nl index.html
+
+git stage index.html
+git commit -m "04)    Add the Header Tags to the file"
+
+
+#3.5 add a hello world statement
+printf "<html>\n\t<head>\n\t</head>\n\t<body>\n\\t</body>\n</html>" >  index.html \
+&& sed -i '5i\\t    <h1> Hello World <\/h1>' index.html \
+&& clear \
+&& echo "   5  add Hello World " \
+&& nl index.html 
+
+git stage index.html
+git commit -m  "05)    Add a Hello World statment to the file"
+
+
+#3.6 add a personal comment
+printf "<html>\n\t<head>\n\t</head>\n\t<body>\n\t   <h1> Hello World </h1>\n\\t</body>\n</html>\n" >  index.html \
+&& sed -i '6i\\t   <div> This is a personal comment from john <\/div>' index.html \
+&& clear \
+&& echo "   6  add a personal comment" \
+&& nl index.html 
+
+git stage index.html \
+&& git commit -m  "06)    Add a personal comment to the file"
+
+
+
+
+
+
