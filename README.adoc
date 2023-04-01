@@ -11,6 +11,7 @@ git config --global init.defaultBranch master
 ----
 
 
+
 == Command Line Aliases 
 ----
 alias s='clear && echo "git status" && git status '
