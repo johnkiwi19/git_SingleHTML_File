@@ -1,5 +1,5 @@
 = Aciidoc
-:sectionnums:
+:secionnumbs:
 :toc:
 
 == Git Aliases and configuration
