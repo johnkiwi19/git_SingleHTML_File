@@ -1,3 +1,7 @@
+html :README.adoc
+	clear
+	asciidoc README.adoc
+	ls *.adoc
+	ls *.html
+	find ~/aaa/git -name '*.html'
 
-html :single_Html_File/single_html_file.adoc
-	asciidoc single_Html_File/single_html_file.adoc
