@@ -8,6 +8,7 @@ git config --global alias.l "log --pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset
 git config --global user.email "john.mallett@gmail.com"
 git config --global user.name "John"
 git config --global init.defaultBranch master
+git config --global core.editor "micro"
 ----
 
 
