@@ -1,6 +1,6 @@
 html :README.adoc
 	clear
-	asciidoctor README.adoc
+	asciidoc README.adoc
 	ls *.adoc
 	ls *.html
 	find ~/aaa/git -name '*.html'

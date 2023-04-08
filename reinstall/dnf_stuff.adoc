@@ -1,0 +1,60 @@
+== Dnf commands 
+
+----
+   26  sudo dnf install vim
+   30  sudo dnf install git
+   61  sudo dnf info virt-manager
+  112  sudo dnf search all openjdk | grep src
+  113  sudo dnf install   java-17-openjdk-devel
+  114  sudo dnf install maven
+  116  sudo dnf install git
+  126  sudo dnf install tmux
+  127  sudo dnf install tmux
+  214  sudo dnf search  code
+  215  sudo dnf search  visual studo 
+  216  sudo dnf search  studo 
+  217  sudo dnf search  stu
+  268  dnf search usb
+
+   59  sudo dnf list virt*
+----
+
+
+
+
+----
+toolbox git_SingleHTML_File]$ history | grep install
+
+218  flatpak install https://flathub.org/repo/appstream/com.visualstudio.code.flatpakref
+231  flatpak install https://flathub.org/repo/appstream/com.visualstudio.code.flatpakref
+232  flatpak install https://flathub.org/repo/appstream/com.visualstudio.code.flatpakref
+
+
+
+
+
+  
+63  rpm-ostree install virt-manage vim
+15  rpm-ostree install htop neofetch glances
+ 
+
+113  sudo dnf install java-17-openjdk-devel
+281  sudo dnf install htop
+26   sudo dnf install vim
+114  sudo dnf install maven
+116  sudo dnf install git
+127  sudo dnf install tmux
+661  sudo dnf install asciidoc
+684  sudo dnf install micro
+696  sudo dnf install make
+
+
+
+
+
+
+
+
+----
+\
+

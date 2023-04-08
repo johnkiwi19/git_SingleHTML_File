@@ -1,6 +1,6 @@
-html :README.adoc
+html : single_html_file.adoc
 	clear
-	asciidoctor README.adoc
+	asciidoctor single_html_file.adoc
 	ls *.adoc
 	ls *.html
 	find ~/aaa/git -name '*.html'

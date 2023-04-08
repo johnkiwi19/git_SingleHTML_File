@@ -1,6 +1,6 @@
-= Sciidoc
-:sectionnums:
+= Aciidoc
 :toc:
+:sectnums:
 
 == Git Aliases and configuration
 ----
