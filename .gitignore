@@ -3,5 +3,5 @@ READNE.html
 single_Html_File/.single_html_file.adoc.swp
 *.swp
 single_Html_File/single_html_file.html
-i
+*.html:
 
