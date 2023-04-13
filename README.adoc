@@ -15,7 +15,8 @@ git config --global core.editor "micro"
 
 == Command Line Aliases 
 ----
-alias s='clear && echo "git status" && git status '
+alias  s='clear && echo "git status"       && git status '
+alias  c='clear && echo "git commit      " && git commit '
 alias aa='git   add -A '
 alias a='git add '
 alias ra="git rm --cached '*'"
